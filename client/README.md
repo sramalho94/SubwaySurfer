@@ -40,3 +40,22 @@ The Subway Surfers Web App is a way for users to write reviews of subway lines. 
 
 There are three schemes in the App. User, Review and Subway.
 The relationship between User and Review is one to many; as one user can post multiple reviews but a review can only be posted by one user. The relationship between Review and Subway is One to Many; as a Review can only be about one Subway line but a Subway line can have many reviews. The relationship between Subway to User is Many to Many; as one Subway line can have many Users.
+
+---
+
+## Component Hierarchy
+
+--
+
+The heirarchy begins with the App at the top, then it goes to the Landing Page/Main Page. The Landing Page will have a nav bar that the user can use to navigate to a login page or a signup page. The landing page will be populated with reviews. There Landing page will also have a link to a page that lists the various subway lines. Each line will take the user to a page dedicated to that line that shows information about that line.
+
+---
+
+## Technologies Used
+
+---
+
+Mongo DB
+Express
+React
+Node JS
