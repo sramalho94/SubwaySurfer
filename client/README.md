@@ -1,8 +1,8 @@
 # SubwaySurfer
 
-## Project 2: Subway Review Web App
+### Project 2: Subway Review Web App
 
-## By: Stephan D Ramalho
+### By: Stephan D Ramalho
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Trello
 
-[My Project Board](https://lucid.app/lucidchart/e9698d3c-e009-4e7d-ac34-87f849b5572b/edit?viewport_loc=-21%2C64%2C1560%2C756%2C0_0&invitationId=inv_b7f22fc4-0ce5-498a-a2b3-58a97358ad39)
+[My Project Board](https://trello.com/invite/b/poozAc5o/ATTI56f231de0694f4e9c084f1d216926f18266D4040/subway-surfer)
 
 ## ERD
 
