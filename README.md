@@ -45,7 +45,7 @@ The relationship between User and Review is one to many; as one user can post mu
 
 ## Component Hierarchy
 
---
+---
 
 The heirarchy begins with the App at the top, then it goes to the Landing Page/Main Page. The Landing Page will have a nav bar that the user can use to navigate to a login page or a signup page. The landing page will be populated with reviews. There Landing page will also have a link to a page that lists the various subway lines. Each line will take the user to a page dedicated to that line that shows information about that line.
 
