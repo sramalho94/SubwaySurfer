@@ -1,0 +1,23 @@
+{
+  "name": "subwaysurfer",
+  "version": "1.0.0",
+  "description": "### Project 2: Subway Review Web App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sramalho94/SubwaySurfer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sramalho94/SubwaySurfer/issues"
+  },
+  "homepage": "https://github.com/sramalho94/SubwaySurfer#readme",
+  "dependencies": {
+    "mongoose": "^6.6.5"
+  }
+}
