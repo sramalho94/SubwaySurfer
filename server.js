@@ -1,24 +1,34 @@
 const express = require('express')
-const PORT = process.env.PORT || 3001
 const cors = require('cors')
 const logger = require('morgan')
-const app = express()
 
+const app = express()
+const PORT = process.env.PORT || 3001
+
+// 3rd party middleware
+app.use(cors())
+app.use(logger('dev'))
+
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+//routes
 app.get('/', (req, res) => {
-  res.send('Subway surfers go!')
+  res.send({ subwaySurfed: true })
 })
-app.get('/users/:userId', (req, res) => {
-  console.log(req.params)
-  res.send('this route has been reached')
-})
-app.post('/users', (req, res) => {
-  console.log('L14: you have sent a request via the POST method')
-  res.send({ msg: 'thanks for the post!' })
-})
-app.get('/find', (req, res) => {
-  console.log('This is the query object in the request object:', req.query)
-  res.send('I am at the find route')
-})
+
+app.get(
+  '/middleware',
+  (req, res, next) => {
+    console.log('this is middleware')
+    next()
+  },
+  (req, res) => {
+    console.log('FROM LINE 28: this is the function of the response completing')
+    res.send('response completed')
+  }
+)
+
 app.listen(PORT, () => {
   console.log(`Subway 🚇 server listening on port: ${PORT}`)
 })
