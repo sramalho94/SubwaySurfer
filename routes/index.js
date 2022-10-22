@@ -9,4 +9,6 @@ router.get('/users', controllers.getAllUsers)
 
 router.post('/users', controllers.createUser)
 
+router.post('/reviews', controllers.createReview)
+
 module.exports = router

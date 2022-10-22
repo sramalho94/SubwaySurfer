@@ -1,5 +1,6 @@
 const User = require('../models/user')
 const Review = require('../models/review')
+const Subway = require('../models/subway')
 
 const createUser = async (req, res) => {
   try {
@@ -20,6 +21,18 @@ const getAllUsers = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
+const createSubway = async (req, res) => {
+  try {
+    const subway = await new Subway(req.body)
+    await subway.save()
+    return res.status(201).json({
+      subway
+    })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const createReview = async (req, res) => {
   try {
     const review = await new Review(req.body)
@@ -33,5 +46,7 @@ const createReview = async (req, res) => {
 }
 module.exports = {
   getAllUsers,
-  createUser
+  createUser,
+  createReview,
+  createSubway
 }
