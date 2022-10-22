@@ -11,4 +11,6 @@ router.post('/users', controllers.createUser)
 
 router.post('/reviews', controllers.createReview)
 
+router.post('/subways', controllers.createSubway)
+
 module.exports = router
