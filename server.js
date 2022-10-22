@@ -13,7 +13,11 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/api', routes)
+app.use('/', routes)
+
+app.get('/', (req, res) => {
+  console.log('we here')
+})
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 

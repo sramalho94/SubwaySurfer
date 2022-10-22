@@ -1,7 +1,7 @@
-const { Router } = require('express')
+const express = require('express')
+const router = express.Router()
 const controllers = require('../controllers')
 const { db } = require('../db')
-const router = Router()
 
 router.get('/', (req, res) => res.send('This is root!'))
 router.get('/users', controllers.getAllUsers)
