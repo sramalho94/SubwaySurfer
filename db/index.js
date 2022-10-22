@@ -1,10 +1,8 @@
 const mongoose = require('mongoose')
-
-let MONGODB_URI =
-  'mongodb+srv://sramalho:22emperoR@subwaysurferprojectclus.xs2jkjp.mongodb.net/subwaySurfersDatabase'
+require('dotenv').config()
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Riding the lines with MongoDB 🚇')
   })
