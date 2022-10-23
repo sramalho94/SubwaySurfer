@@ -23,7 +23,7 @@ const getAllUsers = async (req, res) => {
   }
 }
 
-const getUserById = async (rec, res) => {
+const getUserById = async (req, res) => {
   try {
     const { id } = req.params
     const user = await User.findById(id)
