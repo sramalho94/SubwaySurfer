@@ -9,6 +9,8 @@ router.get('/users', controllers.getAllUsers)
 
 router.post('/users', controllers.createUser)
 
+router.get('/reviews', controllers.getAllReviews)
+
 router.post('/reviews', controllers.createReview)
 
 router.post('/subways', controllers.createSubway)
