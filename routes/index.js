@@ -19,6 +19,8 @@ router.get('/reviews', controllers.getAllReviews)
 
 router.post('/reviews', controllers.createReview)
 
+router.get('/reviews/:id', controllers.getReviewById)
+
 router.post('/subways', controllers.createSubway)
 
 module.exports = router
