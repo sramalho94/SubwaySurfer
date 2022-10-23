@@ -13,6 +13,8 @@ router.get('/users/:id', controllers.getUserById)
 
 router.put('/users/:id', controllers.updateUser)
 
+router.delete('/users/:id', controllers.deleteUser)
+
 router.get('/reviews', controllers.getAllReviews)
 
 router.post('/reviews', controllers.createReview)
