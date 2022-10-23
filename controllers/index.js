@@ -47,6 +47,19 @@ const updateUser = async (req, res) => {
   }
 }
 
+const deleteUser = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await User.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('User Deleted')
+    }
+    throw new Error('Plant not found')
+  } catch (error) {
+    return res.status(500).send(error.mesasge)
+  }
+}
+
 const createSubway = async (req, res) => {
   try {
     const subway = await new Subway(req.body)
@@ -84,6 +97,7 @@ module.exports = {
   createUser,
   getUserById,
   updateUser,
+  deleteUser,
   getAllReviews,
   createReview,
   createSubway
