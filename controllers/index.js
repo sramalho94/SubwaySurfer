@@ -81,6 +81,19 @@ const getAllReviews = async (req, res) => {
   }
 }
 
+const getReviewById = async (req, res) => {
+  try {
+    const { id } = req.params
+    const review = await Review.findById(id)
+    if (review) {
+      return res.status(200).json({ review })
+    }
+    return res.status(404).send('Review with specified ID does not exist')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const createReview = async (req, res) => {
   try {
     const review = await new Review(req.body)
@@ -92,6 +105,31 @@ const createReview = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
+
+const updateReview = async (req, res) => {
+  try {
+    const review = await Review.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.status(200).json(review)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const deleteReview = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Review.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Review Deleted')
+    }
+    throw new Error('Review not found')
+  } catch (error) {
+    return res.status(500).send(error.mesasge)
+  }
+}
+
 module.exports = {
   getAllUsers,
   createUser,
@@ -99,6 +137,9 @@ module.exports = {
   updateUser,
   deleteUser,
   getAllReviews,
+  getReviewById,
   createReview,
+  updateReview,
+  deleteReview,
   createSubway
 }
