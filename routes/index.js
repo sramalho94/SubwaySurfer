@@ -23,6 +23,8 @@ router.get('/reviews/:id', controllers.getReviewById)
 
 router.put('/reviews/:id', controllers.updateReview)
 
+router.delete('/reviews/:id', controllers.deleteReview)
+
 router.post('/subways', controllers.createSubway)
 
 module.exports = router
