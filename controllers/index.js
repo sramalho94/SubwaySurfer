@@ -41,7 +41,7 @@ const updateUser = async (req, res) => {
     const user = await User.findByIdAndUpdate(req.params.id, req.body, {
       new: true
     })
-    res.status(200).json(plant)
+    res.status(200).json(user)
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -74,7 +74,7 @@ const createSubway = async (req, res) => {
 
 const getAllReviews = async (req, res) => {
   try {
-    const reviews = await Review.find()
+    const reviews = await Review.find().populate('line').populate('user')
     return res.status(200).json({ reviews })
   } catch (error) {
     return res.status(500).send(error.message)
