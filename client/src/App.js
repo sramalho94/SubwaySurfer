@@ -4,7 +4,7 @@ import axios from 'axios'
 import Reviews from './components/Reviews'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
-
+import CreateUser from './components/CreateUser'
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,7 @@ function App() {
         <Nav />
       </header>
       <main>
+        <CreateUser />
         <Routes>
           <Route path="/" element={<Reviews />} />
         </Routes>
