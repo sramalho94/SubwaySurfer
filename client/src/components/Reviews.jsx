@@ -7,6 +7,8 @@ const Reviews = () =>{
   useEffect(() => {
     const apiCall = async () => {
       let response = await axios.get('http://localhost:3001/reviews')
+      console.log(response)
+      
       updateReviews(response.data.reviews)
     }
     apiCall()
