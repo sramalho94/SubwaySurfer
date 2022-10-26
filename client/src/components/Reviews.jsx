@@ -27,12 +27,12 @@ const Reviews = () =>{
         <img src='https://cdn.pixabay.com/photo/2017/11/13/08/08/silver-2944881_960_720.png'></img>
       </marquee>
       <h1>All Reviews Here</h1>
+      <Link to={`/write-review`}>Write Review</Link>
       {reviews.map((review) => (
         <div key={review._id}>
           <img src={review.line.logo}></img>
           <h2>{review.review}</h2>
           <h2>{review.rating}</h2>
-          <h2>{review._id}</h2>
           <h3>
             {review.user.firstName}, {review.user.userName}
           </h3>
