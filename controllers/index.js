@@ -96,26 +96,6 @@ const getReviewById = async (req, res) => {
   }
 }
 
-const getReviewsByUserName = async (req, res) => {
-  //   try {
-  //     const { Name } = req.params
-  //     const reviews = await Review.find({})
-  //       .populate('line')
-  //       .populate('user')
-  //       const reviewsByUserName = []
-  //       reviews.forEach((review)=>{
-  //         if(review.user.Username === Name){
-  //           return reviewByUserName =
-  //         }
-  //       })
-  //     if (review) {
-  //       return res.status(200).json({ review })
-  //     }
-  //   } catch (error) {
-  //     return res.status(500).send(error.message)
-  //   }
-}
-
 const createReview = async (req, res) => {
   try {
     const review = await new Review(req.body)
@@ -160,7 +140,6 @@ module.exports = {
   deleteUser,
   getAllReviews,
   getReviewById,
-  getReviewsByUserName,
   createReview,
   updateReview,
   deleteReview,

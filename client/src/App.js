@@ -9,7 +9,6 @@ import EditReview from './components/EditReview'
 
 function App() {
   const [isLoggedIn, setLogIn] = useState(false)
-  const [userName, setSetUser] = useState(null)
   const [firstName, setFirstName] = useState(null)
   return (
     <div className="App">
