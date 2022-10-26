@@ -6,15 +6,23 @@ import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import CreateUser from './components/CreateUser'
 function App() {
+  const [isLoggedIn, setLogIn] = useState(false)
+  const [userName, setSetUser] = useState(null)
+  const [firstName, setFirstName] = useState(null)
   return (
     <div className="App">
       <header>
-        <Nav />
+        <Nav isLoggedIn={isLoggedIn} firstName={firstName} />
       </header>
       <main>
-        <CreateUser />
         <Routes>
           <Route path="/" element={<Reviews />} />
+          <Route
+            path="/users"
+            element={
+              <CreateUser setLogIn={setLogIn} setBanana={setFirstName} />
+            }
+          />
         </Routes>
       </main>
     </div>

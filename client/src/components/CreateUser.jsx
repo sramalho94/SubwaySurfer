@@ -1,20 +1,37 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router'
 
-const CreateUser = ()=>{
+const CreateUser = (props)=>{
 
   const [formState, setFormState]= useState({ userName: '', firstName: '', lastName: '', password:''})
-  
+  const navigate = useNavigate()
   const handleChange = (event)=>{
     setFormState({...formState, [event.target.id]: event.target.value})
+  }
+  const handleSubmit = async (event)=>{
+    event.preventDefault()
+    let createdUser = await axios.post('http://localhost:3001/users', 
+      formState)
+      .then((response)=>{
+        console.log(response)
+        console.log(props)
+        props.setLogIn(true)
+        props.setBanana(formState.firstName)
+      navigate('/')
+      })
+      .catch((error)=>{
+        console.log(error)
+      });
+      
   }
   return(
     <div className="CreateUserForm">
       <h3>To Sign Up, Fill Out:</h3>
-      <form>
-        <label hmtlFor='userName'>UserName:</label>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='userName'>UserName:</label>
         <input id='userName' value={formState.userName} onChange={handleChange}/>
-        <label hmtlFor='firstName'>FirstName:</label>
+        <label htmlFor='firstName'>FirstName:</label>
         <input id='firstName' value={formState.firstName} onChange={handleChange}/>
         <label htmlFor='lastName'>LastName:</label>
         <input id='lastName' value={formState.lastName} onChange={handleChange}/> 

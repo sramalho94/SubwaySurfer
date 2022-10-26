@@ -16,7 +16,7 @@ const Reviews = () =>{
 
   return (
     <div className="Reviews">
-            <marquee>
+      <marquee>
         <img src='https://cdn.pixabay.com/photo/2017/11/13/08/08/silver-2944881_960_720.png'></img>
       </marquee>
       <h1>All Reviews Here</h1>
@@ -28,7 +28,10 @@ const Reviews = () =>{
           <h3>
             {review.user.firstName}, {review.user.userName}
           </h3>
-          <button>Edit</button>
+          <button 
+          // onClick={}
+          >Edit</button>
+          <button>Delete</button>
         </div>
       ))}
     </div>
