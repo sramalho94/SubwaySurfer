@@ -5,6 +5,8 @@ import Reviews from './components/Reviews'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import CreateUser from './components/CreateUser'
+import EditReview from './components/EditReview'
+
 function App() {
   const [isLoggedIn, setLogIn] = useState(false)
   const [userName, setSetUser] = useState(null)
@@ -23,6 +25,7 @@ function App() {
               <CreateUser setLogIn={setLogIn} setFirstName={setFirstName} />
             }
           />
+          <Route path="/edit-review/:id" element={<EditReview />} />
         </Routes>
       </main>
     </div>
