@@ -17,7 +17,7 @@ const CreateUser = (props)=>{
         console.log(response)
         console.log(props)
         props.setLogIn(true)
-        props.setBanana(formState.firstName)
+        props.setFirstName(formState.firstName)
       navigate('/')
       })
       .catch((error)=>{

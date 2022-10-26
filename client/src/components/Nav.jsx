@@ -6,7 +6,7 @@ const Nav = (props) => {
     <nav className ="navbar">
       <div>
         <Link to="/">Reviews</Link>
-        {props.isLoggedIn ? (<div>Hello {props.firstName}.You are logged in</div>) 
+        {props.isLoggedIn ? (<div>Hello {props.firstName}, You are logged in</div>) 
         :  (<div>
               <Link to="/users">Sign Up</Link>
               <Link to="/login">Login</Link>

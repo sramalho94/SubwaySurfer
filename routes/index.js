@@ -21,6 +21,8 @@ router.post('/reviews', controllers.createReview)
 
 router.get('/reviews/:id', controllers.getReviewById)
 
+// router.get('/reviews/byUser/:userName', controllers.getReviewByUserName)
+
 router.put('/reviews/:id', controllers.updateReview)
 
 router.delete('/reviews/:id', controllers.deleteReview)

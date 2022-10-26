@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const Review = new Schema(
   {
-    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    userName: { type: String, required: true },
     line: { type: Schema.Types.ObjectId, ref: 'Subway' },
     review: { type: String, required: true },
     rating: { type: String, required: true }

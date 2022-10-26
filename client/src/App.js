@@ -20,7 +20,7 @@ function App() {
           <Route
             path="/users"
             element={
-              <CreateUser setLogIn={setLogIn} setBanana={setFirstName} />
+              <CreateUser setLogIn={setLogIn} setFirstName={setFirstName} />
             }
           />
         </Routes>
