@@ -10,7 +10,6 @@ mongoose
     console.error('Connection error', e.message)
   })
 
-//remove this line after final product is complete
 mongoose.set('debug', true)
 const db = mongoose.connection
 
