@@ -18,7 +18,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Reviews />} />
+          <Route path="/" element={<Reviews />} className="navlink" />
           <Route
             path="/users"
             element={

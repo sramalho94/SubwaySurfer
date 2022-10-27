@@ -4,12 +4,12 @@ const Nav = (props) => {
   console.log(props.isLoggedIn)
   return(
     <nav className ="navbar">
-      <div>
-        <Link to="/">Reviews</Link>
+      <div className="navbar">
+        <Link to="/" className='navlink'>Reviews</Link>
+        <Link to="/write-review" className='navlink'>Write Review</Link>
         {props.isLoggedIn ? (<div>Hello {props.firstName}, You are logged in</div>) 
         :  (<div>
-              <Link to="/users">Sign Up</Link>
-              <Link to="/login">Login</Link>
+              <Link to="/users" className='navlink'>Sign Up</Link>
             </div>)}
       </div>
     </nav>

@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.Train-car{
+  max-width: 250px;
+  max-height: 200px;
+  margin-top: 50px;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  align-items: center;
+  padding-top: 5px;
+  justify-content: space-around;
+  background-color: gray;
+  border: solid black;
+  padding-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navlink{
+  text-decoration: none;
+  border: solid yellow;
+  background-color: yellow;
+  color: gray;
+  margin: 5px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-06/220616-new-york-subway-train-mta-ew-115p-f71b7a.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.review{
+  background-color: white;
+  max-width: 100%;
+  max-height:100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: gray;
+  border: solid yellow;
+}
+.logo{
+  max-width: 50px;
+  max-height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons{
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CreateUserForm{
+  display: flex;
+  background-color: gray;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  padding-bottom: 50px;
+  border: solid yellow;
 }

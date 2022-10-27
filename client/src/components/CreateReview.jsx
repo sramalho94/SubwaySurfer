@@ -24,7 +24,7 @@ const CreateReview = (props)=>{
   }
   return(
     <div className="CreateUserForm">
-      <h3>To Sign Up, Fill Out:</h3>
+      <h3>Write Reivew:</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor='review'>Review:</label>
         <input id='review' value={formState.review} onChange={handleChange}/> 
