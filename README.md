@@ -24,13 +24,18 @@
 
 [ERD](https://drive.google.com/file/d/1Nqq-NP9CVvOiskwQ7pi0_ouXn9zHwBCn/view?usp=sharing)
 
+## Heroku Deployment
+
+[Heroku Link](https://subway-surfers2022.herokuapp.com/)
+
 ---
 
 ## App Description
 
 ---
 
-The Subway Surfers Web App is a way for users to write reviews of subway lines. The first page will have a navigation bar that has sign up and log in link. The main page will have the general collection of reviews that the user can browse. Once the user is logged in they will be able to write reviews. There will also be a page that has a list of all subway lines. The user can click on a line and see some information about it and a picture of the line logo.
+The Subway Surfers Web App is a way for users to write reviews of subway lines.
+The landing page contains a navigation bar as well as section that displays all reviews. The nav bar serves as a router that takes users to a sign up form, a write review form, and a button that takes the user back to the landing page. Within each review are buttons that allows for the deletion and update of the specific review.
 
 ---
 
@@ -39,7 +44,7 @@ The Subway Surfers Web App is a way for users to write reviews of subway lines. 
 ---
 
 There are three schemes in the App. User, Review and Subway.
-The relationship between User and Review is one to many; as one user can post multiple reviews but a review can only be posted by one user. The relationship between Review and Subway is One to Many; as a Review can only be about one Subway line but a Subway line can have many reviews. The relationship between Subway to User is Many to Many; as one Subway line can have many Users.
+The relationship between User and Review is one to many; as one user can post multiple reviews but a review can only be posted by one user. The relationship between Review and Subway is Many to One; as a Review can only be about one Subway line but a Subway line can have many reviews. The relationship between Subway to User is not direct, they are linked through the Review Model.
 
 ---
 
@@ -47,7 +52,7 @@ The relationship between User and Review is one to many; as one user can post mu
 
 ---
 
-The heirarchy begins with the App at the top, then it goes to the Landing Page/Main Page. The Landing Page will have a nav bar that the user can use to navigate to a login page or a signup page. The landing page will be populated with reviews. There Landing page will also have a link to a page that lists the various subway lines. Each line will take the user to a page dedicated to that line that shows information about that line.
+The heirarchy begins with the App at the top, then it goes to the Landing Page/Main Page. The Landing Page will have a nav bar that the user can use to navigate to a sign up page, a write review page, and back to the home page. The landing page will be populated with reviews. Within each review there are buttons that allow for the deletion of that review, or route the user to a form that allows them to edit that specific review.
 
 ---
 
@@ -59,3 +64,16 @@ Mongo DB
 Express
 React
 Node JS
+Nodemon
+Cors
+Morgan
+Insomnia
+
+---
+
+## Acknowledgments
+
+---
+
+I'd like to thank all my peers who helped me when I was struggling to meet the Update requirement for MVP, mainly Jeremy and Kalen. With John and Austin's help I was able to stay on track and manage my time effectively. I'd also like to shout out Ben's lectures on the backend related subjects we've covered, they definitely helped solidy my understanding of key concepts. I'd also like to thank
+my friend and mentor Ziquan Miao who helped improve my understanding of React and how props are passed down.
