@@ -30,7 +30,7 @@
 
 ---
 
-![picture](https://imgur.com/oa5R5Va)
+![picture](https://imgur.com/oa5R5Va.png)
 
 ---
 
@@ -43,7 +43,7 @@ The landing page contains a navigation bar as well as section that displays all 
 
 ---
 
-![picture](https://imgur.com/whjJ6jN)
+![picture](https://imgur.com/whjJ6jN.png)
 
 ---
 
@@ -55,7 +55,7 @@ I think my main challenge was, as usual, learning how to break a project into ba
 
 ---
 
-![picture](https://imgur.com/whjJ6jN)
+![picture](https://imgur.com/whjJ6jN.png)
 
 ---
 
