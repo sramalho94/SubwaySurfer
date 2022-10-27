@@ -30,6 +30,10 @@
 
 ---
 
+![picture](https://imgur.com/oa5R5Va)
+
+---
+
 ## App Description
 
 ---
@@ -39,11 +43,19 @@ The landing page contains a navigation bar as well as section that displays all 
 
 ---
 
+![picture](https://imgur.com/whjJ6jN)
+
+---
+
 ## Challenges Face
 
 ---
 
 I think my main challenge was, as usual, learning how to break a project into bare basic components and building it up from there. I do think I did a better job of that during this project than I did with Project 1. I also bit off more than I could chew when it came to tracking whether or not a specific user was currently logged in to write reviews. To overcome that barrier I made a generic Anonymous user that is used for all reviews.
+
+---
+
+![picture](https://imgur.com/whjJ6jN)
 
 ---
 
