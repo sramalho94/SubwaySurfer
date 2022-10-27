@@ -80,14 +80,14 @@ The heirarchy begins with the App at the top, then it goes to the Landing Page/M
 
 ---
 
-Mongo DB
-Express
-React
-Node JS
-Nodemon
-Cors
-Morgan
-Insomnia
+-Mongo DB
+-Express
+-React
+-Node JS
+-Nodemon
+-Cors
+-Morgan
+-Insomnia
 
 ---
 
@@ -97,3 +97,11 @@ Insomnia
 
 I'd like to thank all my peers who helped me when I was struggling to meet the Update requirement for MVP, mainly Jeremy and Kalen. With John and Austin's help I was able to stay on track and manage my time effectively. I'd also like to shout out Ben's lectures on the backend related subjects we've covered, they definitely helped solidy my understanding of key concepts. I'd also like to thank
 my friend and mentor Ziquan Miao who helped improve my understanding of React and how props are passed down.
+
+---
+
+## Future Updates
+
+---
+
+I'd like to add a component that displays all subway calls, this is a relatively simple addition that make the Project a little more feature rich. I'd also like to learn how to monitor which specific user is logged in and how I can use that information in the review writing process. I'd also like to add a form that allows a user to add a new subway line to be reviewed.
