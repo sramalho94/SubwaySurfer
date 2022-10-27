@@ -26,7 +26,11 @@ const CreateUser = (props)=>{
       
   }
   return(
+    
     <div className="CreateUserForm">
+      <marquee>
+        <img className='Train-car'src='https://cdn.pixabay.com/photo/2017/11/13/08/08/silver-2944881_960_720.png'></img>
+      </marquee>
       <h3>To Sign Up, Fill Out:</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor='userName'>UserName:</label>
