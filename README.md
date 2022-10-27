@@ -55,10 +55,6 @@ I think my main challenge was, as usual, learning how to break a project into ba
 
 ---
 
-![picture](https://imgur.com/whjJ6jN.png)
-
----
-
 ## Entity Relationships
 
 ---
@@ -97,6 +93,10 @@ The heirarchy begins with the App at the top, then it goes to the Landing Page/M
 
 I'd like to thank all my peers who helped me when I was struggling to meet the Update requirement for MVP, mainly Jeremy and Kalen. With John and Austin's help I was able to stay on track and manage my time effectively. I'd also like to shout out Ben's lectures on the backend related subjects we've covered, they definitely helped solidy my understanding of key concepts. I'd also like to thank
 my friend and mentor Ziquan Miao who helped improve my understanding of React and how props are passed down.
+
+---
+
+![picture](https://imgur.com/Ix56Cuo.png)
 
 ---
 
