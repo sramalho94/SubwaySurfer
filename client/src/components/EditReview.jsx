@@ -31,11 +31,9 @@ const handleChange = (event)=>{
 
   return(
     <div className="EditReviewForm">
-      <div>
       <marquee>
         <img className='Train-car'src='https://cdn.pixabay.com/photo/2017/11/13/08/08/silver-2944881_960_720.png'></img>
       </marquee>
-      </div>
       <h1>Edit Review Below</h1>
       {formState && 
       (<form onSubmit={handleSubmit}>

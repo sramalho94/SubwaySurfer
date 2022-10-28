@@ -13,6 +13,7 @@
   background-color: gray;
   border: solid #FCCC0A;
   padding-bottom: 5px;
+  border-radius: 15px;
 }
 
 .navlink{
@@ -43,6 +44,7 @@ body {
   align-items: center;
   background-color: gray;
   border: solid #FCCC0A;
+  border-radius: 15px;
 }
 .logo{
   max-width: 50px;
@@ -62,6 +64,7 @@ body {
   align-items: center;
   padding-bottom: 50px;
   border: solid #FCCC0A;
+  border-radius: 15px;
 }
 .navcontainer{
   display: flex;
