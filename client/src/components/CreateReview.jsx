@@ -28,7 +28,7 @@ const CreateReview = (props)=>{
         <img className='Train-car'src='https://cdn.pixabay.com/photo/2017/11/13/08/08/silver-2944881_960_720.png'></img>
       </marquee>
       <h3>Write Reivew:</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='form'>
         <label htmlFor='review'>Review:</label>
         <input id='review' value={formState.review} onChange={handleChange}/> 
         <label htmlFor='rating'>Rating:</label>

@@ -66,6 +66,10 @@ body {
   border: solid #FCCC0A;
   border-radius: 15px;
 }
+.form{
+  display: flex;
+  flex-direction: column;
+}
 .navcontainer{
   display: flex;
   flex-direction: row;
