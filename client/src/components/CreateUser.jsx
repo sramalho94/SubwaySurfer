@@ -41,7 +41,7 @@ const CreateUser = (props)=>{
         <input id='lastName' value={formState.lastName} onChange={handleChange}/> 
         <label htmlFor='password'>Password:</label>
         <input id='password'value={formState.password} onChange={handleChange}/>       
-        <button type='submit'>Submit</button>
+        <button type='submit' className='button'>Submit</button>
       </form>
     </div>
   )

@@ -33,7 +33,7 @@ const CreateReview = (props)=>{
         <input id='review' value={formState.review} onChange={handleChange}/> 
         <label htmlFor='rating'>Rating:</label>
         <input id='rating'value={formState.rating} onChange={handleChange}/>       
-        <button type='submit'>Submit</button>
+        <button type='submit' className='button'>Submit</button>
       </form>
     </div>
   )

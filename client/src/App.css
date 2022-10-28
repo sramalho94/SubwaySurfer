@@ -26,6 +26,11 @@
   padding: 10px;
 }
 
+.navlink:hover{
+  transition: 0.9s;
+  background-color: #008C15;
+}
+
 body {
   background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-06/220616-new-york-subway-train-mta-ew-115p-f71b7a.jpg');
   display: flex;
@@ -74,4 +79,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.button{
+  border-radius: 15px;
+}
+.button:hover{
+  background-color: #FCCC0A;
+  transition: 0.9s;
 }

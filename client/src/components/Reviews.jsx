@@ -38,8 +38,8 @@ const Reviews = () =>{
             {review.user.firstName}, {review.user.userName}
           </h3>
           <div className='buttons'>
-          <button type ='button' onClick={()=> deleteReview(review._id)}>Delete</button>
-          <Link to={`/edit-review/${review._id}`}><button>Edit</button></Link>
+          <button type ='button' onClick={()=> deleteReview(review._id)} className='button'>Delete</button>
+          <Link to={`/edit-review/${review._id}`}><button className='button'>Edit</button></Link>
           </div>
         </div>
       ))}
