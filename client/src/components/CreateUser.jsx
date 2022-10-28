@@ -14,8 +14,6 @@ const CreateUser = (props)=>{
     let createdUser = await axios.post('http://localhost:3001/users', 
       formState)
       .then((response)=>{
-        console.log(response)
-        console.log(props)
         props.setLogIn(true)
         props.setFirstName(formState.firstName)
       navigate('/')
