@@ -41,7 +41,7 @@ const handleChange = (event)=>{
         <input id='review' defaultValue={formState.review} onChange={handleChange}/>
         <label htmlFor='rating'>Rating:</label>
         <input id='rating' defaultValue={formState.rating} onChange={handleChange}/>
-        <button type='submit' >Submit Revision</button>
+        <button type='submit' className='button'>Submit Revision</button>
       </form >)
       }
     </div>
