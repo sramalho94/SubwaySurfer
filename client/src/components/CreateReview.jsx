@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router'
 
 const CreateReview = (props)=>{
 
+  const [subways, updateSubways] = useState([])
   const [formState, setFormState]= useState({ user: '63598d93df534106c79bf6d5', line: '', review: '', rating:''})
   const navigate = useNavigate()
   const handleChange = (event)=>{
@@ -19,9 +20,16 @@ const CreateReview = (props)=>{
       })
       .catch((error)=>{
         console.log(error)
-      });
-      
+      });  
   }
+  useEffect(() => {
+  const getSubwayLines = async ()=>{
+    let response = await axios.get('http://localhost:3001/subways')
+    console.log(response.data.subways)
+    updateSubways(response.data.subways)
+  }
+  getSubwayLines()
+},[])
   return(
     <div className="CreateUserForm">
       <marquee>
@@ -32,12 +40,11 @@ const CreateReview = (props)=>{
         <label htmlFor='line'>Line:</label>
         <select id="line" onChange={handleChange}>
           <option value={null} defaultValue>Pick Line</option>
-          <option value='6354633a9a8f92586c28ba43'>R</option>
-          <option value='635d29a42aca26fd4ff195b0'>7</option>
-          <option value='635d2a1f2aca26fd4ff195b2'>G</option>
-          <option value="635d694689b020e6440134e1">E</option>
-          <option value="635d732789b020e6440134f1">2</option>
-          <option value="635d736689b020e6440134f3">L</option>
+          {subways.map((subway)=>(
+            <option value={subway._id}>{subway.line}</option>
+          )
+
+          )}
         </select>
         <label htmlFor='review'>Review:</label>
         <textarea id='review' value={formState.review} onChange={handleChange}/> 
