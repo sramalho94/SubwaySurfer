@@ -74,6 +74,15 @@ const createSubway = async (req, res) => {
   }
 }
 
+const getAllSubways = async (req, res) => {
+  try {
+    const subways = await Subway.find()
+    return res.status(200).json({ subways })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const getAllReviews = async (req, res) => {
   try {
     const reviews = await Review.find().populate('line').populate('user')
@@ -143,5 +152,6 @@ module.exports = {
   createReview,
   updateReview,
   deleteReview,
-  createSubway
+  createSubway,
+  getAllSubways
 }

@@ -27,4 +27,6 @@ router.delete('/reviews/:id', controllers.deleteReview)
 
 router.post('/subways', controllers.createSubway)
 
+router.get('/subways', controllers.getAllSubways)
+
 module.exports = router
