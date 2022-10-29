@@ -40,7 +40,7 @@ const CreateReview = (props)=>{
           <option value="635d736689b020e6440134f3">L</option>
         </select>
         <label htmlFor='review'>Review:</label>
-        <input id='review' value={formState.review} onChange={handleChange}/> 
+        <textarea id='review' value={formState.review} onChange={handleChange}/> 
         <label htmlFor='rating'>Rating:</label>
         <input id='rating'value={formState.rating} onChange={handleChange}/>       
         <button type='submit' className='button'>Submit</button>
