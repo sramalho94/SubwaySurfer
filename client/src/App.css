@@ -40,9 +40,10 @@ body {
 
 .review{
   background-color: white;
-  max-width: 100%;
+  max-width: 75%;
   max-height:100%;
-  margin: 10px;
+  margin-left: 100px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +51,7 @@ body {
   background-color: gray;
   border: solid #FCCC0A;
   border-radius: 15px;
+  padding:10px;
 }
 .logo{
   max-width: 50px;
