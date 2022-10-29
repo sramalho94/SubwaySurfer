@@ -15,13 +15,12 @@ const SubwayLines = () =>{
 
   return(
     <div>
-      <h1>All Subway lines here</h1>
+      <h1 className="title">All Subway lines here:</h1>
     <div className="Reviews">
       {subways.map((subway)=>(
         <div key={subway._id} className='review'>
           <img src={subway.logo} className='logo'></img>
           <h3>{subway.description}</h3>
-          <h1></h1>
 
         </div>
       )
