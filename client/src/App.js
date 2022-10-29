@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import CreateUser from './components/CreateUser'
 import EditReview from './components/EditReview'
 import CreateReview from './components/CreateReview'
+import SubwayLines from './components/SubwayLines'
 
 function App() {
   const [isLoggedIn, setLogIn] = useState(false)
@@ -27,6 +28,7 @@ function App() {
           />
           <Route path="/edit-review/:id" element={<EditReview />} />
           <Route path="/write-review" element={<CreateReview />} />
+          <Route path="/subways" element={<SubwayLines />} />
         </Routes>
       </main>
     </div>
