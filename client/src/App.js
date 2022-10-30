@@ -8,6 +8,7 @@ import CreateUser from './components/CreateUser'
 import EditReview from './components/EditReview'
 import CreateReview from './components/CreateReview'
 import SubwayLines from './components/SubwayLines'
+import CreateSubway from './components/CreateSubway'
 
 function App() {
   const [isLoggedIn, setLogIn] = useState(false)
@@ -29,6 +30,7 @@ function App() {
           <Route path="/edit-review/:id" element={<EditReview />} />
           <Route path="/write-review" element={<CreateReview />} />
           <Route path="/subways" element={<SubwayLines />} />
+          <Route path="/add-subway" element={<CreateSubway />} />
         </Routes>
       </main>
     </div>
