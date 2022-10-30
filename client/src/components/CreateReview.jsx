@@ -41,7 +41,7 @@ const CreateReview = (props)=>{
         <select id="line" onChange={handleChange}>
           <option value={null} defaultValue>Pick Line</option>
           {subways.map((subway)=>(
-            <option value={subway._id}>{subway.line}</option>
+            <option value={subway._id} key={subway._id}>{subway.line}</option>
           )
 
           )}
