@@ -11,7 +11,7 @@ const CreateUser = (props)=>{
   }
   const handleSubmit = async (event)=>{
     event.preventDefault()
-    let createdUser = await axios.post('http://localhost:3001/users', 
+    let createdUser = await axios.post('/api/users', 
       formState)
       .then((response)=>{
         props.setLogIn(true)

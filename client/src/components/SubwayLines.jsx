@@ -5,7 +5,7 @@ const SubwayLines = () =>{
   
   useEffect(()=> {
     const apiCall = async () => {
-    let response = await axios.get('http://localhost:3001/subways')
+    let response = await axios.get('/api/subways')
     console.log(response.data.subways)
     updateSubways(response.data.subways)
     }

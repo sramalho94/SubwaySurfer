@@ -10,7 +10,7 @@ const Reviews = () =>{
 
   useEffect(() => {
     const apiCall = async () => {
-      let response = await axios.get('http://localhost:3001/reviews')
+      let response = await axios.get('/api/reviews')
       
       updateReviews(response.data.reviews)
     }
@@ -18,7 +18,7 @@ const Reviews = () =>{
   }, [reviewsSubmitted])
   
   const deleteReview = async (id) =>{
-    let response = await axios.delete(`http://localhost:3001/reviews/${id}`)
+    let response = await axios.delete(`/api/reviews/${id}`)
     toggleReviewsSubmitted(!reviewsSubmitted)
   }
   return (

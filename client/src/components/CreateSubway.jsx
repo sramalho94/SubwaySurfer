@@ -11,7 +11,7 @@ const handleChange = (event) => {
 const handleSubmit = async (event) => {
   event.preventDefault()
   console.log(formState)
-  let newSubway = await axios.post('http://localhost:3001/subways', 
+  let newSubway = await axios.post('/api/subways', 
   formState)
   .then((response)=> {
     console.log(response)

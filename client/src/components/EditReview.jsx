@@ -14,7 +14,7 @@ const handleChange = (event)=>{
   useEffect(() => {
     const getReviewId = async() => {
       try{
-        let response = await axios.get(`http://localhost:3001/reviews/${id}`)
+        let response = await axios.get(`/api/reviews/${id}`)
         setFormState(response.data.review)
       } catch(error){
         console.log(error)
@@ -24,7 +24,7 @@ const handleChange = (event)=>{
   }, [])
   const handleSubmit = async(e) =>{
     e.preventDefault();
-    await axios.put(`http://localhost:3001/reviews/${id}`,formState)
+    await axios.put(`/api/reviews/${id}`,formState)
     navigate('/')
   }
 

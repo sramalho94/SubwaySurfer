@@ -12,7 +12,7 @@ const CreateReview = (props)=>{
   }
   const handleSubmit = async (event)=>{
     event.preventDefault()
-    let createdReview = await axios.post('http://localhost:3001/reviews', 
+    let createdReview = await axios.post('/api/reviews', 
       formState)
       .then((response)=>{
         console.log(response)
@@ -24,7 +24,7 @@ const CreateReview = (props)=>{
   }
   useEffect(() => {
   const getSubwayLines = async ()=>{
-    let response = await axios.get('http://localhost:3001/subways')
+    let response = await axios.get('/api/subways')
     console.log(response.data.subways)
     updateSubways(response.data.subways)
   }
