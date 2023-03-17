@@ -30,6 +30,12 @@
 
 ---
 
+## Dockerhub
+
+[Dockerhub](https://hub.docker.com/r/sramalho94/subway_surfers)
+
+---
+
 ![picture](https://imgur.com/oa5R5Va.png)
 
 ---
@@ -40,6 +46,25 @@
 
 The Subway Surfers Web App is a way for users to write reviews of subway lines.
 The landing page contains a navigation bar as well as section that displays all reviews. The nav bar serves as a router that takes users to a sign up form, a write review form, and a button that takes the user back to the landing page. Within each review are buttons that allows for the deletion and update of the specific review.
+
+---
+
+## Getting Started
+
+---
+
+### Backend
+
+- `clone` down the repo
+- `cd` into the root directory of the project
+- run `npm i`
+- run `npm start` to start the backend
+
+### Frontend
+
+- `cd` into the client directory
+- run `npm i`
+- run `npm start` to start the frontend React application
 
 ---
 
