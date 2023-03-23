@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="90" fill="#0039A6" />
+  <text x="50" y="120" font-family="Arial Black, sans-serif" font-size="65" font-weight="bold" fill="white">
+    SUB
+  </text>
+</svg>
