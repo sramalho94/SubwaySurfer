@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.train-car-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+
+.Train-car {
+  max-width: 250px;
+  max-height: 200px;
+  position: absolute;
+  animation: trainCarAnimation 10s linear infinite;
+}
+
+@keyframes trainCarAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
