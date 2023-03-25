@@ -1,11 +1,12 @@
 import axios from 'axios'
+import { BASE_URL } from '../globals'
 import { useState, useEffect } from 'react'
 const SubwayLines = () => {
   const [subways, updateSubways] = useState([])
 
   useEffect(() => {
     const apiCall = async () => {
-      let response = await axios.get('/api/subways')
+      let response = await axios.get(`${BASE_URL}/api/subways`)
       updateSubways(response.data.subways)
     }
     apiCall()
