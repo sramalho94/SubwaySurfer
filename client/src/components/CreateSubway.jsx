@@ -34,10 +34,10 @@ const CreateSubway = () => {
         New York City is constantly evolving. If you don't see your train or bus
         listed on our site you can add it by filling out this form.
       </p>
-      <h3>Add Another Line here:</h3>
+      <h3 className="text-xl px-2 font-bold py-2">Add Another Line here:</h3>
       <div className="flex flex-row justify-center">
         <form
-          className="flex flex-col  bg-white w-2/3 h-72 p-2 border-b-4 border-blue-500 shadow-xl  text-[#0f61a9]  font-bold text-lg mt-20"
+          className="flex flex-col  bg-white md:w-2/3 md:h-72 p-2 border-b-4 border-blue-500 shadow-xl  text-[#0f61a9]  font-bold text-lg mt-20"
           onSubmit={handleSubmit}
         >
           <div className="flex flex-row justify-between pb-1">
