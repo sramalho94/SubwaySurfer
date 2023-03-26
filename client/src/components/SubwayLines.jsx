@@ -13,12 +13,15 @@ const SubwayLines = () => {
   }, [])
 
   return (
-    <div>
-      <h1 className="title">All Subway lines here:</h1>
-      <div className="Reviews">
+    <div className="bg-gray-200 min-h-screen ">
+      <h1 className="text-xl px-2 font-bold py-2">All Subway lines here:</h1>
+      <div className="flex flex-col md:grid md:grid-cols-3">
         {subways.map((subway) => (
-          <div key={subway._id} className="review">
-            <img src={subway.logo} className="logo" alt={subway._id}></img>
+          <div
+            key={subway._id}
+            className="bg-white m-4 p-2 border-b-4 border-blue-500 shadow-xl hover:bg-[#0f61a9] text-[#0f61a9] hover:text-white font-bold text-lg"
+          >
+            <img src={subway.logo} className="h-20" alt={subway._id}></img>
             <h3>{subway.description}</h3>
           </div>
         ))}
