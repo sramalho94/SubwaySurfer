@@ -50,7 +50,7 @@ const CreateUser = (props) => {
           onSubmit={handleSubmit}
           className="flex flex-col justify-center bg-white md:w-2/3 md:h-72 p-2 border-b-4 border-blue-500 shadow-xl  text-[#0f61a9]  font-bold text-lg mt-20"
         >
-          <div className="flex flex-row justify-between pb-1">
+          <div className="flex flex-row pr-10 pb-1">
             <label htmlFor="userName">UserName:</label>
             <input
               id="userName"
@@ -59,7 +59,7 @@ const CreateUser = (props) => {
               className="bg-blue-100 rounded-xl"
             />
           </div>
-          <div className="flex flex-row justify-between pb-1">
+          <div className="flex flex-row pr-10 pb-1">
             <label htmlFor="password">Password:</label>
             <input
               id="password"
