@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
+import { BASE_URL } from '../globals'
 
 const CreateSubway = () => {
   const navigate = useNavigate()
@@ -16,7 +17,7 @@ const CreateSubway = () => {
     event.preventDefault()
 
     let newSubway = await axios
-      .post('/api/subways', formState)
+      .post(`${BASE_URL}/api/subways`, formState)
       .then((response) => {
         setFormState({ line: '', description: '', logo: '' })
         navigate('/')
