@@ -13,7 +13,8 @@
   max-width: 250px;
   max-height: 200px;
   position: absolute;
-  animation: trainCarAnimation 10s linear infinite;
+  right: 0;
+  animation: trainCarAnimation 20s linear infinite;
 }
 
 @keyframes trainCarAnimation {
@@ -21,6 +22,6 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-700%);
   }
 }

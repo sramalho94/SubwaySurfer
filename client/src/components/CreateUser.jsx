@@ -29,7 +29,7 @@ const CreateUser = (props) => {
       })
   }
   return (
-    <div className="bg-gray-200 min-h-screen  pb-11">
+    <div className="bg-gray-200 min-h-screen min-w-screen pb-11">
       <div
         style={{
           backgroundImage: `url('/subwaybg3.jpg')`,

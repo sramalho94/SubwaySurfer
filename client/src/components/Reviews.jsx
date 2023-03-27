@@ -27,7 +27,7 @@ const Reviews = () => {
           backgroundImage: `url('/subwaybg.jpg')`,
           backgroundPosition: 'center'
         }}
-        className="h-26 p-1 md:h-72 flex flex-col justify-center"
+        className="h-[150px] md:h-[150px] flex flex-col justify-center"
       >
         <TrainCar />
       </div>
