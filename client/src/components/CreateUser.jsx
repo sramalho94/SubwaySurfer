@@ -42,7 +42,12 @@ const CreateUser = (props) => {
       <h1 className="font-bold text-4xl px-1"> Want to join our community?</h1>
       <p className="pt-6 px-1">
         {' '}
-        In order to join all you have to do is enter a username and password.
+        This form is for demonstration purposes only. Authentication is being
+        implemented.
+      </p>
+      <p className="font-bold text-4xl px-1">
+        Do not enter personal information! No one from Subway Surfers will ever
+        ask you for your personal information.
       </p>
       <h3 className="text-xl px-2 font-bold py-2">To Sign Up, Fill Out:</h3>
       <div className="flex flex-row justify-center">
