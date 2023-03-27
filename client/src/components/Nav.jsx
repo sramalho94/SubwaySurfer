@@ -22,7 +22,9 @@ const Nav = (props) => {
           Write Review
         </Link>
         {props.isLoggedIn ? (
-          <div>Hello {props.firstName}, You are logged in</div>
+          <div className="p-2 my-auto">
+            Hello {props.firstName}, You are logged in
+          </div>
         ) : (
           <div className="flex flex-row">
             <Link to="/users" className="my-auto ">
